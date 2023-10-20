@@ -5,15 +5,20 @@ return {
     view = {
       adaptive_size = true,
       width = 30,
-      side = "left",
+      side = 'left',
     },
     git = {
       enable = true,
       ignore = false,
     },
+    actions = {
+      open_file = {
+        resize_window = true,
+      },
+    },
   },
   keys = {
-    { "<leader>tt", "<cmd>NvimTreeToggle<CR>", desc = "Toggle NvimTree" },
-    { "<leader>tf", "<cmd>NvimTreeFocus<CR>",  desc = "Focus NvimTree" },
-  }
+    { '<leader>tt', '<cmd>NvimTreeToggle<CR>', desc = 'Toggle NvimTree' },
+    { '<leader>tf', '<cmd>NvimTreeFocus<CR>', desc = 'Focus NvimTree' },
+  },
 }
