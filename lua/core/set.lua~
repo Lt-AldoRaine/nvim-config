@@ -2,6 +2,7 @@ vim.opt.relativenumber = true
 
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 0
+vim.opt.noexpandtab = true
 vim.opt.tabstop = 4
 vim.opt.scrolloff = 8
 
@@ -9,8 +10,6 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-
-vim.opt.pumheight = 15
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
