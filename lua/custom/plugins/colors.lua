@@ -10,6 +10,7 @@ return {
         light_style = 'day',
         transparent = true,
         styles = {
+          floats = 'transparent',
           sidebars = 'transparent',
         },
       }

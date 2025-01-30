@@ -2,13 +2,13 @@ return {
   'neovim/nvim-lspconfig',
   dependencies = {
     -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-    { 'j-hui/fidget.nvim',                   tag = 'legacy', opts = {} },
+    { 'j-hui/fidget.nvim', tag = 'legacy', opts = {} },
     'williamboman/mason-lspconfig.nvim',
     'williamboman/mason.nvim',
     -- Additional lua configuration, makes nvim stuff amazing!
     'folke/neodev.nvim',
     'hrsh7th/cmp-nvim-lsp',
-    { "antosha417/nvim-lsp-file-operations", config = true },
+    { 'antosha417/nvim-lsp-file-operations', config = true },
   },
   opts = {
     -- options for vim.diagnostic.config()
@@ -62,10 +62,9 @@ return {
       end, '[W]orkspace [L]ist Folders')
     end
 
-    local cmp_nvim_lsp = require('cmp_nvim_lsp')
+    local cmp_nvim_lsp = require 'cmp_nvim_lsp'
 
-    local capabilities = cmp_nvim_lsp.default_capabilities();
-
+    local capabilities = cmp_nvim_lsp.default_capabilities()
 
     require('mason').setup()
     require('mason-lspconfig').setup()
@@ -108,5 +107,5 @@ return {
     }
 
     require('neodev').setup()
-  end
+  end,
 }
